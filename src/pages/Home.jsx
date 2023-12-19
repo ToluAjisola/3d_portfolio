@@ -3,6 +3,7 @@ import { Suspense} from 'react'
 import { Canvas } from "@react-three/fiber";
 import Loader from '../components/Loader';
 import Island from '../models/Island';
+import Sky from '../models/Sky';
 
 const Home = () => {
 
@@ -42,6 +43,7 @@ const Home = () => {
               intensity={0}
             />
 
+            <Sky />
             <Island
               position={islandPosition}
               scale={islandScale}
