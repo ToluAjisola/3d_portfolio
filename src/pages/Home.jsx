@@ -25,9 +25,26 @@ const Home = () => {
     return [screenScale, screenPosition, rotaion];
   };
 
-  const [islandScale, islandPosition, islandRotation] =
-    adjustIslandForScreenSize();
+  
+  
+  const adjustPlaneForScreenSize = () => {
+    let screenScale, screenPosition;
 
+    // If screen width is less than 768px, adjust the scale and position
+    if (window.innerWidth < 768) {
+      screenScale = [1.5, 1.5, 1.5];
+      screenPosition = [0, -1.5, 0];
+    } else {
+      screenScale = [3, 3, 3];
+      screenPosition = [0, -4, -4];
+    }
+
+    return [screenScale, screenPosition];
+  };
+
+  const [planeScale, planePosition] = adjustPlaneForScreenSize();
+const [islandScale, islandPosition, islandRotation] =
+    adjustIslandForScreenSize();
     return (
       <section className="w-full h-screen relative">
         {/* <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
@@ -58,7 +75,12 @@ const Home = () => {
               scale={islandScale}
               rotation={islandRotation}
             />
-            <Plane />
+            <Plane
+              isRotating={isRotating}
+              planePosition={planePosition}
+              rotation={[0, 20.1, 0]}
+              planeScale={planeScale}
+            />
           </Suspense>
         </Canvas>
       </section>

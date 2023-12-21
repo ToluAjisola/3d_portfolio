@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useGLTF } from "@react-three/drei";
 import birdScene from "../assets/3d/bird.glb";
 
 const Bird = () => {
