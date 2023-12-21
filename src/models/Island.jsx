@@ -45,14 +45,12 @@ const Island = ({isRotating, setIsRotating, ...props}) => {
     event.stopPropagation();
     event.preventDefault();
     setIsRotating(false);
-    
   };
 
   // Handle pointer (mouse or touch) move event
   const handlePointerMove = (event) => {
     event.stopPropagation();
     event.preventDefault();
-
     if (isRotating) {
       // If rotation is enabled, calculate the change in clientX position
       const clientX = event.touches ? event.touches[0].clientX : event.clientX;
@@ -78,12 +76,10 @@ const Island = ({isRotating, setIsRotating, ...props}) => {
       if (!isRotating) setIsRotating(true);
 
       islandRef.current.rotation.y += 0.01 * Math.PI;
-
     } else if (event.key === "ArrowRight") {
       if (!isRotating) setIsRotating(true);
 
       islandRef.current.rotation.y -= 0.01 * Math.PI;
-      
     }
   };
 
@@ -94,8 +90,7 @@ const Island = ({isRotating, setIsRotating, ...props}) => {
     }
   };
 
-  
-// This function is called on each frame update
+  // This function is called on each frame update
   useFrame(() => {
     // If not rotating, apply damping to slow down the rotation (smoothly)
     if (!isRotating) {
@@ -106,6 +101,8 @@ const Island = ({isRotating, setIsRotating, ...props}) => {
       if (Math.abs(rotationSpeed.current) < 0.001) {
         rotationSpeed.current = 0;
       }
+
+      islandRef.current.rotation.y += rotationSpeed.current;
     } else {
       // When rotating, determine the current stage based on island's orientation
       const rotation = islandRef.current.rotation.y;
@@ -132,26 +129,25 @@ const Island = ({isRotating, setIsRotating, ...props}) => {
       // Set the current stage based on the island's orientation
       switch (true) {
         case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
-          setCurrentStage(4);
+          //setCurrentStage(4);
           break;
         case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
-          setCurrentStage(3);
+          //setCurrentStage(3);
           break;
         case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
-          setCurrentStage(2);
+          //setCurrentStage(2);
           break;
         case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
-          setCurrentStage(1);
+          //setCurrentStage(1);
           break;
         default:
-          setCurrentStage(null);
+          //setCurrentStage(null);
       }
     }
-
   });
 
   const { nodes, materials } = useGLTF(islandScene);
-  
+
   useEffect(() => {
     // Add event listeners for pointer and keyboard events
     const canvas = gl.domElement;
