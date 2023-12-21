@@ -15,11 +15,69 @@ import { a } from "@react-spring/three";
 
 import islandScene from "../assets/3d/island.glb";
 
-const Island = (props) => {
-     const islandRef = useRef();
+const Island = ({isRotating, setIsRotating, ...props}) => {
+  const islandRef = useRef();
+  // Get access to the Three.js renderer and viewport
+  const { gl, viewport } = useThree();
+
+  // Use a ref for the last mouse x position
+  const lastMouseX = useRef(0);
+  // Use a ref for rotation speed
+  const rotationSpeed = useRef(0);
+  // Define a damping factor to control rotation damping
+  const dampingFactor = 0.95;
+
+  // Handle pointer (mouse or touch) down event
+  const handlePointerDown = (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+    setIsRotating(true);
+
+    // Calculate the clientX based on whether it's a touch event or a mouse event
+    const clientX = event.touches
+      ? event.touches[0].clientX
+      : event.clientX;
+
+    // Store the current clientX position for reference
+    lastMouseX.current = clientX;
+  };
+
+  // Handle pointer (mouse or touch) up event
+  const handlePointerUp = (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+    setIsRotating(false);
+    // If rotation is enabled, calculate the change in clientX position
+    const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+
+    // calculate the change in the horizontal position of the mouse cursor or touch input,
+    // relative to the viewport's width
+    const delta = (clientX - lastMouseX.current) / viewport.width;
+
+    // Update the island's rotation based on the mouse/touch movement
+    islandRef.current.rotation.y += delta * 0.01 * Math.PI;
+
+    // Update the reference for the last clientX position
+    lastMouseX.current = clientX;
+
+    // Update the rotation speed
+    rotationSpeed.current = delta * 0.01 * Math.PI;
+  };
+
+  // Handle pointer (mouse or touch) move event
+  const handlePointerMove = (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+
+    if (isRotating) {
+      handlePointerUp(event);
+    }
+    
+  };
+
   const { nodes, materials } = useGLTF(islandScene);
   return (
-    <a.group ref={islandRef} {...props} >
+    <a.group ref={islandRef} {...props}>
       <mesh
         geometry={nodes.polySurface944_tree_body_0.geometry}
         material={materials.PaletteMaterial001}
