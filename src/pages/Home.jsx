@@ -68,7 +68,7 @@ const [islandScale, islandPosition, islandRotation] =
             />
 
             <Bird />
-            <Sky />
+            <Sky isRotating={isRotating} />
             <Island
               isRotating={isRotating}
               setIsRotating={setIsRotating}
