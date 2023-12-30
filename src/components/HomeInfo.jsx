@@ -56,7 +56,7 @@ const renderContent = {
       text={
         "Looking to talk about projects or has my portfolio interested you?"
       }
-      link="/about"
+      link="/contact"
       btnText="Let's talk"
     />
   ),
