@@ -1,10 +1,14 @@
 import React, { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser";
 
+import useAlert from "../hooks/useAlert";
+import Alert from '../components/Alert';
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   
+  const { alert, showAlert, hideAlert } = useAlert();
   const [isLoading, setIsLoading] = useState(false);
   
   const handleChange = (e) => {
@@ -29,18 +33,40 @@ const Contact = () => {
     ).then(() => {
       setIsLoading(false);
       //Success message
-       setForm({name: "", email: "", message: "",
+       showAlert({
+         show: true,
+         text: "Thank you for your message 😃",
+         type: "success",
        });
+
+       setTimeout(() => {
+         hideAlert(false);
+
+         setForm({
+           name: "",
+           email: "",
+           message: "",
+         });
+       }, [3000])
+      
     }).catch((error) => {
       setIsLoading(false);
       console.log(error);
       //Show alert
+
+      showAlert({
+        show: true,
+        text: "I didn't receive your message 😢",
+        type: "danger",
+      });
     })
       ;
   };
 
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
+      {alert.show && <Alert {...alert} />}
+      
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
 
