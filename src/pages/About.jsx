@@ -12,8 +12,8 @@ const About = () => {
       </h1>
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-        Bachelor's Degree and experience working in a company. I picked up many
-          skills along the way
+          Bachelor's Degree and experience working in a company.
+          I picked up many skills along the way
           </p>
       </div>
     </section>
