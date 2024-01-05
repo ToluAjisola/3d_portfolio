@@ -9,7 +9,7 @@ import About from './pages/About';
 
 const App = () => {
     return (
-      <main className="bg-slate-300/20 h-[100%]">
+      <main className="bg-slate-500/20 min-h-screen">
         <Router>
           <Navbar />
           <Routes>
