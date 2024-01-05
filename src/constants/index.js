@@ -102,13 +102,14 @@ export const experiences = [
     iconBg: "#accbe1",
     date: "June 2022 - August 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+        "Participated in Agile software development cycles as part of a 5-member team, using Java and Spring Boot.",
+        "Assisted in developing responsive user interfaces for a high-traffic e-commerce website with React.js.",
+        "Supported back-end development for a financial services application using Node.js and Express.",
+        "Aided in managing and optimizing SQL databases.",
+       "Managed code versions and collaboration using Git.",
+      "Applied basic cybersecurity practices in application development.",
     ],
-    },
-    
+  },
 ];
 
 export const socialLinks = [
@@ -130,12 +131,5 @@ export const socialLinks = [
 ];
 
 export const projects = [
-  {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
-    name: "Amazon Price Tracker",
-    description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
-  },
+ 
 ];
