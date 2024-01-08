@@ -25,7 +25,6 @@ import {
   tailwindcss,
   threads,
   typescript,
-  gym,
 } from "../assets/icons";
 
 export const skills = [
@@ -135,7 +134,7 @@ export const socialLinks = [
 export const projects = [
   {
     iconUrl: gym,
-    theme: "btn-back-red",
+    theme: "btn-back-orange",
     name: "Gym App",
     description: [
       "Developed a Fitness web application   app that utlizes a RapidAPI to fetch exercises by name,muscle and equipment.",
