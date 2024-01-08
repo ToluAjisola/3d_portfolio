@@ -1,5 +1,4 @@
 
-import infosys from "./infosysLogo.png";
-
+import infosys from "../../../public/InfosysLogo.png";
 
 export {  infosys };
