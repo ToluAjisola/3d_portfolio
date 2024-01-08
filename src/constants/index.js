@@ -7,6 +7,7 @@ import {
   express,
   git,
   github,
+  gym,
   html,
   javascript,
   linkedin,
@@ -24,6 +25,7 @@ import {
   tailwindcss,
   threads,
   typescript,
+  gym,
 } from "../assets/icons";
 
 export const skills = [
@@ -131,5 +133,14 @@ export const socialLinks = [
 ];
 
 export const projects = [
- 
+  {
+    iconUrl: gym,
+    theme: "btn-back-red",
+    name: "Gym App",
+    description: [
+      "Developed a Fitness web application   app that utlizes a RapidAPI to fetch exercises by name,muscle and equipment.",
+      "Allows for the display of youtube instruction videos, similar muscle and equipment when anexercise is selected.",
+    ],
+    link: "https://github.com/ToluAjisola/gym-exercises",
+  },
 ];
