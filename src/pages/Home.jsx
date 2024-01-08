@@ -81,9 +81,9 @@ const [islandScale, islandPosition, islandRotation] =
             />
             <Plane
               isRotating={isRotating}
-              planePosition={planePosition}
+              position={planePosition}
               rotation={[0, 20.1, 0]}
-              planeScale={planeScale}
+              scale={planeScale}
             />
           </Suspense>
         </Canvas>
