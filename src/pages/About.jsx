@@ -20,7 +20,6 @@ const About = () => {
         </span>{" "}
       </h1>
 
-
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
           Bachelor's Degree and experience working in a Software Deveploment
@@ -41,6 +40,9 @@ const About = () => {
                   alt={skill.name}
                   className="w-1/2 h-1/2 object-contain"
                 />
+                <div className="skill-overlay">
+                  <div className="skill-text">{skill.name}</div>
+                </div>
               </div>
             </div>
           ))}
