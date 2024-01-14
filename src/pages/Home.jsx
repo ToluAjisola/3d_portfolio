@@ -27,6 +27,19 @@ const Home = () => {
     return [screenScale, screenPosition, rotaion];
   };
 
+  const adjustSkyForScreenSize = () => {
+    let screenScale = null;
+    let screenPosition = [0, 0, -50];
+    let rotaion = [0.1, 4.7, 0];
+
+    
+      screenScale = 12;
+
+    return [screenScale, screenPosition, rotaion];
+  };
+
+  const [skyScale, skyPosition, skyRotation] =
+    adjustSkyForScreenSize();
   
   
   const adjustPlaneForScreenSize = () => {
@@ -45,8 +58,9 @@ const Home = () => {
   };
 
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
-const [islandScale, islandPosition, islandRotation] =
-    adjustIslandForScreenSize();
+  const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
+  
+
     return (
       <section className="w-full h-screen relative">
         <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
@@ -70,7 +84,14 @@ const [islandScale, islandPosition, islandRotation] =
             />
 
             <Bird />
-            <Sky isRotating={isRotating} />
+            <Sky
+              isRotating={isRotating}
+              position={skyPosition}
+              scale={skyScale}
+              //rotation={skyRotation}
+              //rotation={[-Math.PI / 2, 0, 0]}
+              //scale={50000}
+            />
             <Island
               isRotating={isRotating}
               setIsRotating={setIsRotating}
