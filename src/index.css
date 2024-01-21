@@ -70,12 +70,20 @@ body:has(.card[data-color="green"]:hover) {
     @apply flex flex-wrap gap-7 items-center justify-between;
   }
 
-  .info-box {
+  /* .info-box {
     @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue pt-4 pb-12 px-8;
+  } */
+
+  .info-box {
+    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-purple pt-4 pb-12 px-8;
   }
 
-  .neo-btn {
+  /* .neo-btn {
     @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
+  }
+ */
+ .neo-btn {
+    @apply py-3 px-6 rounded-lg text-purple-600 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
   }
 
   .cta {
@@ -185,6 +193,14 @@ body:has(.card[data-color="green"]:hover) {
     0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
 }
 
+.neo-brutalism-purple {
+  background: #9108c7;
+  position: relative;
+  border-radius: 10px;
+  border: #9108c7;
+  box-shadow: 0.6vmin 0.6vmin #b21eed, 1vmin 1vmin #d168fa, 1vmin 1vmin #b21eed,
+    0.65vmin 1vmin #b21eed, 1vmin 0.65vmin #b21eed;
+}
 .neo-brutalism-white {
   background: #fff;
   border: #fff;

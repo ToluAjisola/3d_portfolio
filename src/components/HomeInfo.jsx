@@ -18,7 +18,7 @@ const renderContent = {
         sm:text-xl 
         sm:leading-snug
         text-center
-        neo-brutalism-blue
+        neo-brutalism-purple
         py-4 px-8 text-white mx-5"
     >
       Hi, I'm
