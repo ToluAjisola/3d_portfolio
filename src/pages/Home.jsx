@@ -74,7 +74,7 @@ const Home = () => {
         >
           <Suspense fallback={<Loader />}>
             <directionalLight position={[1, 1, 0.2]} intensity={2} />
-            <ambientLight intensity={0.5} />
+            <ambientLight intensity={0.5} color={0x9fc5e8} />
             {/* or <pointLight position={[10, 5, 10]} intensity={2} /> if no directional or ambient light */}
             <spotLight />
             <hemisphereLight
