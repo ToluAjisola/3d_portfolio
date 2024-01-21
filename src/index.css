@@ -38,6 +38,10 @@ body:has(.card[data-color="green"]:hover) {
     @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
   }
 
+  .purple-gradient_text {
+    @apply bg-gradient-to-r from-[#ff00f7] to-[#aa00ff] bg-clip-text text-transparent;
+  }
+
   .input {
     @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
   }
@@ -46,8 +50,12 @@ body:has(.card[data-color="green"]:hover) {
     @apply block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-blue-500 focus:border-blue-500 mt-2.5 font-normal shadow-card;
   }
 
-  .btn {
+  /* .btn {
     @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+  }
+ */
+   .btn {
+    @apply text-white bg-gradient-to-r from-[#ff00f7] to-[#aa00ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
   }
 
   .header {
@@ -111,7 +119,8 @@ body:has(.card[data-color="green"]:hover) {
   transform-origin: bottom right;
   transform: rotateZ(15deg);
   will-change: transform;
-  box-shadow: 16px 0 40px #e4e4e4;
+  /* box-shadow: 16px 0 40px #e4e4e4; */
+  box-shadow: 16px 0 40px #e4e4e4db;
 }
 
 .block-container .btn-back-red {
@@ -148,7 +157,8 @@ body:has(.card[data-color="green"]:hover) {
   z-index: 1;
   width: inherit;
   height: inherit;
-  background-color: #ffffff33;
+  /* background-color: #ffffff33; */
+  background-color: #ffffff83;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   transition: 250ms;
@@ -192,7 +202,7 @@ body:has(.card[data-color="green"]:hover) {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgb(122, 139, 163);
+  background-color: rgba(255, 255, 255, 0.821);
 }
 
 .btn-front:hover .skill-overlay {

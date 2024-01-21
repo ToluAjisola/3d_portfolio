@@ -1,3 +1,7 @@
-<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.16602 7.49984H12.8327M12.8327 7.49984L6.99935 1.6665M12.8327 7.49984L6.99935 13.3332" stroke="#406AFF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0"?>
+<svg width="14" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m1.17,7.62l11.66,-0.12m0,0l-5.83,-5.83m5.83,5.83l-5.83,5.83" id="svg_1" stroke="#9333ea" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67"/>
+ </g>
 </svg>

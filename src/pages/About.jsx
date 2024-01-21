@@ -14,13 +14,13 @@ const About = () => {
     <section className="max-container">
       <h1 className="head-text">
         Hello, I'm{" "}
-        <span className="blue-gradient_text font-semibold drop-shadow">
+        <span className="purple-gradient_text font-semibold drop-shadow">
           {" "}
           Tolu
         </span>{" "}
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
+      <div className="mt-5 flex flex-col gap-3 text-indigo-800">
         <p>
           Bachelor's Degree and experience working in a Software Deveploment
           company. I picked up many skills along the way
@@ -51,7 +51,7 @@ const About = () => {
 
       <div className="py-16">
         <h3 className="subhead-text">Work Experience.</h3>
-        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+        <div className="mt-5 flex flex-col gap-3 text-indigo-800">
           <p>
             I've worked with all sorts of companies, leveling up my skills and
             teaming up with smart people. Here's the rundown:

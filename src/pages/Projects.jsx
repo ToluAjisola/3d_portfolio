@@ -9,12 +9,12 @@ const Projects = () => {
     <section className="max-container">
       <h1 className="head-text">
         My{" "}
-        <span className="blue-gradient_text drop-shadow font-semibold">
+        <span className="purple-gradient_text drop-shadow font-semibold">
           Projects
         </span>
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
+      <div className="mt-5 flex flex-col gap-3 text-indigo-800">
         <p>
           Bachelor's Degree and experience working in a Software Deveploment
           company. I picked up many skills along the way
@@ -37,13 +37,13 @@ const Projects = () => {
               <h4 className="text-2xl font-poppins font-semibold">
                 {project.name}
               </h4>
-              <p className="mt-2 text-slate-500">{project.description}</p>
+              <p className="mt-2 text-indigo-800">{project.description}</p>
               <div className="mt-5 flex items-center gap-2 font-poppins">
                 <Link
                   to={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-blue-600"
+                  className="font-semibold text-purple-600"
                 >
                   Live Link
                 </Link>
