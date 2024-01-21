@@ -1,4 +1,4 @@
-import { infosys } from "../assets/images";
+import { infosys } from "../assets/company";
 import {
   car,
   contact,
