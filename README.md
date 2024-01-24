@@ -4,6 +4,8 @@ Made with Reactjs, HTML, CSS and JavaScript
 
 Deployed on Netlify: https://toluwalopeajisola.netlify.app
 
+# Assets from sketchfab.com
+
 # React + Vite
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
