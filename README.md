@@ -5,7 +5,9 @@ Made with Reactjs, HTML, CSS and JavaScript
 Deployed on Netlify: https://toluwalopeajisola.netlify.app
 
 ## Assets from sketchfab.com
-[Fox's Island by nimzu](https://skfb.ly/6XpAQ).
+[Fox's Island by nimzu](https://skfb.ly/6XpAQ)
+[phoenix bird by NORBERTO-3D](https://skfb.ly/6vLBp).
+[Sky Pano - Milkyway by MozillaHubs](https://skfb.ly/6BZ67).
 
 # React + Vite
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
