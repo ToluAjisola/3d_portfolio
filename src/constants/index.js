@@ -140,6 +140,6 @@ export const projects = [
       "Developed a Fitness web application   app that utlizes a RapidAPI to fetch exercises by name,muscle and equipment.",
       "Allows for the display of youtube instruction videos, similar muscle and equipment when anexercise is selected.",
     ],
-    link: "golds-exercises.netlify.app",
+    link: "https://golds-exercises.netlify.app",
   },
 ];
