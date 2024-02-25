@@ -16,8 +16,8 @@ const Projects = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-indigo-800">
         <p>
-          Bachelor's Degree and experience working in a Software Deveploment
-          company. I picked up many skills along the way
+          Bachelor's Degree and experience working in a Software Development
+          company. I picked up many skills along the way while also working on personal projects, listed below:
         </p>
       </div>
       <div className="mt-16 flex flex-wrap gap-12">

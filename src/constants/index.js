@@ -138,10 +138,10 @@ export const projects = [
     theme: "btn-back-orange",
     name: "Gym App",
     description: [
-      "Developed a Fitness web application   app that utlizes a RapidAPI to fetch exercises by name,muscle and equipment.",
-      "Allows for the display of youtube instruction videos, similar muscle and equipment when anexercise is selected.",
+      "Developed a Fitness web application   app that utilizes a RapidAPI to fetch exercises by name, muscle and equipment.",
+      "Allows for the display of YouTube instruction videos, similar muscle and equipment when an exercise is selected.",
     ],
-    link: "https://github.com/ToluAjisola/gym-exercises",
+    link: "https://golds-exercises.netlify.app",
   },
   {
     iconUrl: tic_tac,

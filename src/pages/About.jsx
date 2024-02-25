@@ -22,7 +22,7 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-indigo-800">
         <p>
-          Bachelor's Degree and experience working in a Software Deveploment
+          Bachelor's Degree and experience working in a Software Development
           company. I picked up many skills along the way
         </p>
       </div>
@@ -53,8 +53,8 @@ const About = () => {
         <h3 className="subhead-text">Work Experience.</h3>
         <div className="mt-5 flex flex-col gap-3 text-indigo-800">
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+            During my time working, I have levelled up my skills and
+            teamed up with smart people. Here's the rundown:
           </p>
         </div>
 
