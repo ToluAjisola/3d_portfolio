@@ -24,7 +24,8 @@ import summiz from './summiz.svg'
 import threads from './threads.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
-import gym from './gym_Logo.png'
+import gym from './project/gym_Logo.png'
+import tic_tac from './project/tic-tac-toe.png'
 
 export {
     css,
@@ -54,4 +55,5 @@ export {
     arrow,
     contact,
     gym,
+    tic_tac,
 }
