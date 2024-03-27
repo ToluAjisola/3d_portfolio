@@ -7,7 +7,6 @@ import {
   express,
   git,
   github,
-  gym,
   html,
   javascript,
   linkedin,
@@ -24,7 +23,9 @@ import {
   summiz,
   tailwindcss,
   threads,
+  gym,
   tic_tac,
+  ai_image,
   typescript,
 } from "../assets/icons";
 
@@ -152,5 +153,15 @@ export const projects = [
       "Created a player vs player mode and a CPU mode that allows a player to go against a CPU",
     ],
     link: "https://tic-tac-tolu.netlify.app",
+  },
+  {
+    iconUrl: ai_image,
+    theme: "btn-back-blue",
+    name: "AI image generation",
+    description: [
+      "Developed a Full Stack MERN AI Image Generation App clone of DALL-E. ",
+      "Ulitlizes the OpenAI API, Cloudinary and MongoDB Atlas",
+    ],
+    link: "https://ai-image-generationn.netlify.app",
   },
 ];
