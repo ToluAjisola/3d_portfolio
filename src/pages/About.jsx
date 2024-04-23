@@ -8,6 +8,7 @@ import { experiences, skills } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 import CTA from "../components/CTA";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -111,6 +112,7 @@ const About = () => {
 
       <hr className="border-slate-200" />
       <CTA />
+      <Footer />
     </section>
   );
 };
