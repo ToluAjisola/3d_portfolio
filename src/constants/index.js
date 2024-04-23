@@ -26,6 +26,7 @@ import {
   gym,
   tic_tac,
   ai_image,
+  project_management,
   typescript,
 } from "../assets/icons";
 
@@ -163,5 +164,15 @@ export const projects = [
       "Ulitlizes the OpenAI API, Cloudinary and MongoDB Atlas",
     ],
     link: "https://ai-image-generationn.netlify.app",
+  },
+  {
+    iconUrl: project_management,
+    theme: "btn-back-blue",
+    name: "Project Management",
+    description: [
+      "Developed a simple project management with React and styled it with TailwindCSS. ",
+      "Creates a project category with an internal to-do list.",
+    ],
+    link: "https://project-managing.netlify.app",
   },
 ];

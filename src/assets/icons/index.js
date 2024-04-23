@@ -27,6 +27,7 @@ import contact from './contact.svg'
 import gym from './project/gym_Logo.png'
 import tic_tac from './project/tic-tac-toe.png'
 import ai_image from './project/ai-image-logo.png'
+import project_management from "./project/project_management.png";
 
 
 export {
@@ -59,4 +60,5 @@ export {
   gym,
   tic_tac,
   ai_image,
+  project_management,
 };
