@@ -111,7 +111,7 @@ export const experiences = [
       "Designed and developed frontend interfaces using React and JavaScript, resulting in a 30% increase in user engagement and comprehensive site navigation.",
       "Worked cross - functionally with multiple teams to integrate APIs and RESTful web services, optimizing data exchange processes and reducing integration time by 25%.",
       "Developed scalable GraphQL & RESTful APIs, enhancing system performance and improving end - user interactions by 20 %.",
-      "Performed diligent code reviews, audits, and testing on software deliverables, eventually leading to a 20 % increase in client satisfaction by identifying and reducing post - release defects. ",
+      "Performed diligent code reviews, audits, and testing on software deliverables, eventually leading to a 20 % increase in client satisfaction by identifying and reducing post - release defects.",
       "Implemented automated test scripts and comprehensive E2E test cases using Selenium and Jest – result: 30 % decrease in testing time.",
       "Applied basic cybersecurity practices in application development.",
     ],
