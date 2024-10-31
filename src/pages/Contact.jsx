@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    console.log("Service ID:", VITE_APP_EMAILJS_SERVICE_ID);
+    console.log("Service ID:", import.meta.env.VITE_APP_EMAILJS_SERVICE_ID);
     console.log("Template ID:", import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID);
     console.log("Public Key:", import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
     emailjs
