@@ -19,11 +19,13 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+    console.log("Service ID:", import.meta.env.VITE_APP_EMAILJS_SERVICE_IDS);
+    console.log("Template ID:", import.meta.env.VITE_APP_EMAILJS_TEMPLATE_IDS);
     console.log("Public Key:", import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEYS);
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_IDS,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_IDS,
         {
           from_name: form.name,
           to_name: "Toluwalope Ajisola",
