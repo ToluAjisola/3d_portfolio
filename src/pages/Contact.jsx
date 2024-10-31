@@ -19,48 +19,49 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    emailjs.send(
-      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-      {
-        from_name: form.name,
-        to_name: "Toluwalope Ajisola",
-        from_email: form.email,
-        to_email: "ajisola.toluwalope@gmail.com",
-        message: form.message,
-      },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-    ).then(() => {
-      setIsLoading(false);
-      //Success message
-       showAlert({
-         show: true,
-         text: "Thank you for your message 😃",
-         type: "success",
-       });
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Toluwalope Ajisola",
+          from_email: form.email,
+          to_email: "ajisola.toluwalope@gmail.com",
+          message: form.message,
+        },
+        c_emSz1xAL0NSlx28
+      )
+      .then(() => {
+        setIsLoading(false);
+        //Success message
+        showAlert({
+          show: true,
+          text: "Thank you for your message 😃",
+          type: "success",
+        });
 
-       setTimeout(() => {
-         hideAlert(false);
+        setTimeout(() => {
+          hideAlert(false);
 
-         setForm({
-           name: "",
-           email: "",
-           message: "",
-         });
-       }, [3000])
-      
-    }).catch((error) => {
-      setIsLoading(false);
-      console.log(error);
-      //Show alert
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        }, [3000]);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        console.log(error);
+        //Show alert
 
-      showAlert({
-        show: true,
-        text: "I didn't receive your message 😢",
-        type: "danger",
+        showAlert({
+          show: true,
+          text: "I didn't receive your message 😢",
+          type: "danger",
+        });
       });
-    })
-      ;
   };
 
   return (
