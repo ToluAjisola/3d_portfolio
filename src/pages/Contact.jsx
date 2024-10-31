@@ -30,7 +30,7 @@ const Contact = () => {
           to_email: "ajisola.toluwalope@gmail.com",
           message: form.message,
         },
-        'c_emSz1xAL0NSlx28'
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEYS
       )
       .then(() => {
         setIsLoading(false);
