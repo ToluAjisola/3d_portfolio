@@ -19,6 +19,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+    console.log("Public Key:", import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEYS);
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -30,7 +31,7 @@ const Contact = () => {
           to_email: "ajisola.toluwalope@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEYS
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEYS ,
       )
       .then(() => {
         setIsLoading(false);
