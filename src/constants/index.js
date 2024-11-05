@@ -1,4 +1,4 @@
-import { infosys } from "../assets/company";
+import { infosys, makeitmvp } from "../assets/company";
 import {
   car,
   contact,
@@ -100,10 +100,24 @@ export const skills = [
 
 export const experiences = [
   {
+    title: "Full stack Developer",
+    company_name: "makeitMVP",
+    icon: makeitmvp,
+    iconBg: "#f2f4f5",
+    date: "September 2024 - October 2024",
+    points: [
+      "Contributing to the development of AccountaPair, enhancing live collaboration features, and improving partner matching efficiency by 30%.",
+      "Designing responsive front - end interfaces with React.js to boost user engagement by 25%.",
+      "Conducting code reviews, reducing errors by 15 % and improving overall code quality.",
+      " Collaborating cross - functionally to brainstorm AI tools, driving innovation and user participation.",
+      "Integrating CI / CD practices and deploying features using Docker and Kubernetes.",
+    ],
+  },
+  {
     title: "Software Developer",
     company_name: "Infosys Limited",
     icon: infosys,
-    iconBg: "#accbe1",
+    iconBg: "#f2f4f5",
     date: "June 2022 - August 2023",
     points: [
       "Participated in Agile software development cycles as part of a 5-member team, using Java and Spring Boot.",
